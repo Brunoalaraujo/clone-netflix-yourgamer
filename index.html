@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <!-- cdnjs Ajax e Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Ajax-->
+
     <!-- responsividade -->
-    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="/style/responsive.css" />
 
     <!-- owl css -->
-    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css" />
 
     <title>Your Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h2 class="logo">Your Game</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Inicio</a>
-                <a href="#">Inicio</a>
-                <a href="#">Inicio</a>
-            </nav>
-        </div>
+      <div class="container">
+        <h2 class="logo">Your Game</h2>
+        <nav>
+          <a href="#">Inicio</a>
+          <a href="#">Inicio</a>
+          <a href="#">Inicio</a>
+          <a href="#">Inicio</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <div class="jogoPrincipal">
-            <div class="container">
-                <h3 class="titulo">MEDIEVAL II TOTAL WAR</h3>
-                <p class="descricao">Abrangendo a era mais turbulenta da história ocidental, 
-                    sua busca por território e poder leva você pela Europa, África, 
-                    Oriente Médio e até as margens do Novo Mundo.</p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fa-solid fa-circle-play"></i>
-                        ASSISTIR TRAILER
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        COMPRAR
-                    </button>
-                </div>
-            </div>
+      <div class="jogoPrincipal">
+        <div class="container">
+          <h3 class="titulo">MEDIEVAL II TOTAL WAR</h3>
+          <p class="descricao">
+            Abrangendo a era mais turbulenta da história ocidental, sua busca
+            por território e poder leva você pela Europa, África, Oriente Médio
+            e até as margens do Novo Mundo.
+          </p>
+          <div class="botoes">
+            <button class="botao add">
+              <p>
+                ASSISTIR TRAILER
+                <i class="fa fa-play-circle" aria-hidden="true"></i>
+              </p>
+            </button>
+            <button class="botao">
+              COMPRAR
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="trailer">
+            <iframe
+              width="854"
+              height="480"
+              src="https://www.youtube.com/embed/8eMMVZBBT_s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+            <button class="btnFechar remove">FECHAR</button>
+          </div>
         </div>
+      </div>
     </main>
 
     <div class="carroselJogos">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="boxJogo" src="img/EmpireTotalWar.jpg">
-            </div>
-            <div class="item">
-                <img class="boxJogo" src="img/ThreeKingdomsTotalWar.jpg">
-            </div>
-            <div class="item">
-                <img class="boxJogo" src="img/Rome2TotalWar.jpg">
-            </div>
-            <div class="item">
-                <img class="boxJogo" src="img/Shogun2TotalWar.jpg">
-            </div>
-            <div class="item">
-                <img class="boxJogo" src="img/WarHammer2TotalWar.jpg">
-            </div>
-            <div class="item">
-                <img class="boxJogo" src="img/WarHammer3TotalWar.jpg">
-            </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="boxJogo" src="img/EmpireTotalWar.jpg" />
         </div>
+        <div class="item">
+          <img class="boxJogo" src="img/ThreeKingdomsTotalWar.jpg" />
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/Rome2TotalWar.jpg" />
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/Shogun2TotalWar.jpg" />
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/WarHammer2TotalWar.jpg" />
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/WarHammer3TotalWar.jpg" />
+        </div>
+      </div>
     </div>
 
     <script src="https://kit.fontawesome.com/8441c574d9.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/setup.js"></script>
-
-</body>
+  </body>
 </html>
