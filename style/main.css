@@ -55,7 +55,7 @@ header nav a:hover {
 .jogoPrincipal {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("./img/Medieval2TotalWarCapa.jpg");
+    url("/img/Medieval2TotalWarCapa.jpg");
 
   height: 600px;
   background-size: cover;
