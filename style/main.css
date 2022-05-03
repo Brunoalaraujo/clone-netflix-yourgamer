@@ -1,11 +1,12 @@
 :root {
-  --verde: #66b933;
+  --verde: #47e10c;
   --preto: #000;
   --background: rgba(0, 0, 0, 0.98);
   --fechar: #888;
 }
 
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +18,13 @@ body {
   background: var(--preto);
   font-family: "Arial", Times, serif;
   color: white;
+}
+
+
+h2{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: lighter;
 }
 
 header .container {
@@ -47,7 +55,7 @@ header nav a:hover {
 .jogoPrincipal {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("/img/Medieval2TotalWarCapa.png");
+    url("/img/Medieval2TotalWarCapa.jpg");
 
   height: 600px;
   background-size: cover;
@@ -69,7 +77,8 @@ header nav a:hover {
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-button {
+.botao {
+  text-decoration: none;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
@@ -82,7 +91,7 @@ button {
   transition: 0.3s ease all;
 }
 
-button:hover {
+.botao:hover {
   background-color: white;
   color: black;
 }
@@ -100,39 +109,105 @@ button:hover {
 }
 
 .boxJogo {
+  max-height: 320px;
   height: 100%;
   width: 100%;
   display: block;
 }
 
+
+/* Carrosel */
+
 .carroselJogos {
   margin-top: 5px;
 }
 
-.trailer {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 100%;
-  height: 100%;
+/* Card Carrosel */
+
+.item {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  cursor: auto;
 }
 
-.trailer.abrir {
-  background-color: var(--background);
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.btnFechar {
+.cardInfor{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   position: absolute;
-  top: 30px;
-  right: 30px;
-  cursor: pointer;
-  font-weight: 500;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  z-index: -1;
+  transition: all 0.5s ease ;
+  box-sizing:border-box;
+}
+
+.item:hover .cardInfor{
+  z-index: 0;
+}
+
+.cardInfor .cardTitulo{
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.cardInfor .descricao {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.cardBotoes{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+.cardBotoes a {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* Magnific Popup */
+
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+/* footer */
+
+.portfolio{
+  text-decoration: none;
+  color: #888;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.portfolio:hover{
+  color: #fff;
+  transition: all ease 0.5s;
 }

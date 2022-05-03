@@ -1,3 +1,4 @@
+// Carrosel
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
@@ -15,28 +16,17 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-let trailer = document.querySelector(".trailer");
-let btnFechar = document.querySelector(".btnFechar");
-let add = document.querySelector(".add");
-let remove = document.querySelector(".remove");
+//Magnific Popup
 
-function paraVideo() {
-  var videos = document.querySelectorAll("iframe, video");
-  Array.prototype.forEach.call(videos, function (video) {
-    if (video.tagName.toLowerCase() === "video") {
-      video.pause();
-    } else {
-      var src = video.src;
-      video.src = src;
-    }
+$(document).ready(function() {
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+
+      fixedContentPos: false
   });
-}
-
-add.addEventListener("click", () => {
-  trailer.classList.add("abrir");
-  });
-
-remove.addEventListener("click", () => {
-  btnFechar.parentNode.classList.remove("abrir");
-  paraVideo()
 });
+

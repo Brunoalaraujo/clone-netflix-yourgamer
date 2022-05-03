@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/main.css" />
 
-    <!-- cdnjs Ajax e Bootstrap-->
+    <!-- cdnjs Ajax -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
@@ -14,7 +14,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--Ajax-->
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="style/magnific/magnific-popup.css" />
 
     <!-- responsividade -->
     <link rel="stylesheet" href="/style/responsive.css" />
@@ -31,9 +32,9 @@
         <h2 class="logo">Your Game</h2>
         <nav>
           <a href="#">Inicio</a>
-          <a href="#">Inicio</a>
-          <a href="#">Inicio</a>
-          <a href="#">Inicio</a>
+          <a href="#rts">Jogos RTS</a>
+          <a href="#fps">Jogos FPS</a>
+          <a href="#rpg">Jogos RPG</a>
         </nav>
       </div>
     </header>
@@ -43,65 +44,649 @@
         <div class="container">
           <h3 class="titulo">MEDIEVAL II TOTAL WAR</h3>
           <p class="descricao">
-            Abrangendo a era mais turbulenta da história ocidental, sua busca
+            &ensp;Abrangendo a era mais turbulenta da história ocidental, sua busca
             por território e poder leva você pela Europa, África, Oriente Médio
             e até as margens do Novo Mundo.
           </p>
           <div class="botoes">
-            <button class="botao add">
-              <p>
-                ASSISTIR TRAILER
-                <i class="fa fa-play-circle" aria-hidden="true"></i>
-              </p>
-            </button>
-            <button class="botao">
+            <a
+              class="popup-youtube botao"
+              href="https://www.youtube.com/watch?v=8eMMVZBBT_s"
+            >
+              ASSISTIR TRAILER
+              <i class="fa fa-play-circle" aria-hidden="true"></i>
+            </a>
+
+            <a
+              class="botao"
+              href="https://store.steampowered.com/app/4700/Total_War_MEDIEVAL_II__Definitive_Edition/"
+              target="_blank"
+            >
               COMPRAR
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </button>
-          </div>
-          <div class="trailer">
-            <iframe
-              width="854"
-              height="480"
-              src="https://www.youtube.com/embed/8eMMVZBBT_s"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            </iframe>
-            <button class="btnFechar remove">FECHAR</button>
+            </a>
           </div>
         </div>
       </div>
     </main>
-
+    <h2 id="rts">
+      Jogos <strong>R</strong>eal-<strong>T</strong>ime
+      <strong>S</strong>trategy (RTS)
+    </h2>
     <div class="carroselJogos">
       <div class="owl-carousel owl-theme">
         <div class="item">
           <img class="boxJogo" src="img/EmpireTotalWar.jpg" />
+
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Empire Total War</h3>
+
+            <p class="descricao">
+              &ensp;Comande os mares, controle a terra, forje uma nova nação e
+              conquiste o globo.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=owdM9Dl-bk8"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/10500/Total_War_EMPIRE__Definitive_Edition/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="item">
           <img class="boxJogo" src="img/ThreeKingdomsTotalWar.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Three Kingdowa Total War</h3>
+
+            <p class="descricao">
+              &ensp;Escolha entre um elenco de 12 lendários Warlords e conquiste a
+              China antiga. Recrute personagens heróicos para ajudar sua causa e
+              dominar seus inimigos nas frentes militar, tecnológica, política e
+              econômica.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=aOP1YugqRDk"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/779340/Total_War_THREE_KINGDOMS/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="item">
           <img class="boxJogo" src="img/Rome2TotalWar.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Rome 2 Total War</h3>
+
+            <p class="descricao">
+              &ensp;Comande a máquina de guerra mais incrível do mundo antigo. Domine
+              seus inimigos por meios militares, econômicos e políticos.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=97Y8-QFJbWo"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/214950/Total_War_ROME_II__Emperor_Edition/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="item">
           <img class="boxJogo" src="img/Shogun2TotalWar.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Shogun 2 Total War</h3>
+
+            <p class="descricao">
+              &ensp;Na era mais sombria do Japão, a guerra sem fim deixa um país
+              dividido. É a metade do século 16 no Japão feudal. O país, uma vez
+              governado por um governo unificado, agora está dividido em muitos
+              clãs em guerra.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=Ll9Ebnq1OXY"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/201270/Total_War_SHOGUN_2/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="item">
           <img class="boxJogo" src="img/WarHammer2TotalWar.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Warhammer 2 Total War</h3>
+
+            <p class="descricao">
+              &ensp;Gerenciamento de civilização baseado em turnos e batalhas épicas
+              de estratégia em tempo real com milhares de tropas e monstros ao
+              seu comando.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=fzgpPM_UA9E"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="item">
           <img class="boxJogo" src="img/WarHammer3TotalWar.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Warhammer 3 Total War</h3>
+
+            <p class="descricao">
+              &ensp;O final cataclísmico da trilogia Total War: WARHAMMER chegou.
+              Reúna seus exércitos e adentre o Reino do Caos, uma dimensão de
+              terrores enlouquecedores, onde será decidido o destino do mundo.
+              Você dominará os seus demônios... ou os comandará?
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=6KaMt91ELHU"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/AgeOfEmpires4.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Age of Empires IV</h3>
+
+            <p class="descricao">
+              &ensp; Um dos mais celebrados jogos de estratégia em tempo real está de
+              volta com tudo em Age of Empires IV, colocando você no centro de
+              grandes batalhas históricas que moldaram o mundo.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=Ovt7d34_hRA"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/1466860/Age_of_Empires_IV/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/Stellaris.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Stellaris</h3>
+
+            <p class="descricao">
+              &ensp;Explore uma galáxia repleta de maravilhas neste jogo de estratégia
+              de ficção científica da Paradox Development Studios. Interaja com
+              várias raças alienígenas, descubra novos mundos com eventos
+              inesperados e expanda o alcance do seu império.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=zL0kemiI0yc"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/281990/Stellaris/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/RiseOfNations.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Rise Of Nations</h3>
+
+            <p class="descricao">
+              &ensp;Comece com uma única cidade na Idade Antiga, reuna recursos,
+              construa uma infraestrutura e pesquise tecnologias. Expanda seu
+              poderio militar em todo o mundo, conquistando nações hostis com
+              bombardeiros, navios de guerra e tanques.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=evAOv4e3MY0"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/287450/Rise_of_Nations_Extended_Edition/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 id="fps">
+      Jogos <strong>F</strong>irst-<strong>P</strong>erson
+      <strong>S</strong>hooters (FPS)
+    </h2>
+    <div class="carroselJogos">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="boxJogo" src="img/AceCombat.jpg" />
+
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Ace Combat 7</h3>
+
+            <p class="descricao">
+              &ensp;Torne-se um às dos ares e cruze céus foto realistas com movimentação completa em 360 graus. 
+              Abata aeronaves inimigas e experimente a emoção de combates realistas! O combate aéreo nunca esteve melhor!
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=KQCDj3emnHk"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/502500/ACE_COMBAT_7_SKIES_UNKNOWN/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/CallOfDutyWWII.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Call of Duty WWII</h3>
+
+            <p class="descricao">
+              &ensp;Call of Duty retorna às suas raízes com Call of Duty: WWII, 
+              uma experiência espetacular que redefine a Segunda Guerra Mundial para uma nova geração de jogos.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=D4Q_XYVescc"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/476600/Call_of_Duty_WWII/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/CSGO.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Counter-Strike: Global Offensive</h3>
+
+            <p class="descricao">
+              &ensp;O Counter-Strike: Global Offensive (CS:GO) melhora a jogabilidade de ação baseada em equipes na qual foi pioneiro quando lançado há 19 anos. 
+              O CS:GO contém novos mapas, personagens e armas, além de contar com versões atualizadas de conteúdos.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=edYCtaNueQY"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/PUBG.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">PUBG: BATTLEGROUNDS</h3>
+
+            <p class="descricao">
+              &ensp;Jogue PUBG: BATTLEGROUNDS de graça. Pouse em locais estratégicos, 
+              saqueie armas e suprimentos e sobreviva para se tornar a última equipe de pé nos mais variados campos de batalha.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=u1oqfdh4xBY"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/WarHammer2TotalWar.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Star Wars Battlefront II</h3>
+
+            <p class="descricao">
+              &ensp;Seja o herói na mais incrível fantasia de batalha de STAR WARS.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=_q51LZ2HpbE"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/BattlefieldV.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Battlefield V</h3>
+
+            <p class="descricao">
+              &ensp;Essa é a experiência definitiva de Battlefield V. 
+              Entre no maior conflito da humanidade com o arsenal completo de armas, veículos e dispositivos.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=fb1MR85XFOc"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/1238810/Battlefield_V/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <h2 id="rpg">
+      Jogos <strong>R</strong>ole <strong>P</strong>laying
+      <strong>G</strong>ame (RPG)
+    </h2>
+
+    <div class="carroselJogos">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="boxJogo" src="img/PathfinderKingmaker.jpg" />
+
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Pathfinder: Kingmaker</h3>
+
+            <p class="descricao">
+              &ensp;Explore as Terras Roubadas, uma região cujo território é contestado há séculos. 
+              Centenas de reinos surgiram e desapareceram aqui, e agora é a sua vez de deixar a sua marca construindo o seu próprio reino! 
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=EB96XKG_16w"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/640820/Pathfinder_Kingmaker__Enhanced_Plus_Edition/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/Divinity2.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Divinity: Original Sin 2</h3>
+
+            <p class="descricao">
+              &ensp;Reúna sua equipe. Domine o intenso combate tático. 
+              Aventure-se com uma equipe de até quatro membros, mas saiba que apenas um terá a chance de ascender à Divindade.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=tLdMzHOEwuM"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/Skyrim.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">The Elder Scroll V: Skyrim</h3>
+
+            <p class="descricao">
+              &ensp;Vencedor de mais de 200 prêmios de Jogo do Ano, Skyrim Special Edition dá vida à fantasia épica com detalhes impressionantes.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=UFqFk4MAmrE"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/TheWitcher.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">The Witcher 3: Wild Hunter</h3>
+
+            <p class="descricao">
+              &ensp;Enquanto a guerra assola todos os Reinos do Norte, 
+              você enfrenta o maior conflito de sua vida: ir em busca da criança da profecia, uma arma senciente capaz de alterar o mundo.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=c0i88t0Kacs"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/ACOdyssey.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">Assassin's Creed Odyssey</h3>
+
+            <p class="descricao">
+              &ensp;Decida o seu destino em Assassin's Creed Odyssey.
+               De exilado à lenda viva, embarque em uma odisseia para descobrir os segredos do seu passado e mudar o destino da Grécia Antiga.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=ROVho-9AdV4"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="boxJogo" src="img/GodOfWar.jpg" />
+          <div class="cardInfor">
+            <h3 class="cardTitulo">God Of War</h3>
+
+            <p class="descricao">
+              &ensp;Com a vingança contra os deuses do Olimpo em um passado distante,
+               Kratos agora vive como um mortal no reino dos deuses e monstros nórdicos.
+               É nesse mundo duro e implacável que ele deve lutar para sobreviver... e ensinar seu filho a fazer o mesmo.
+            </p>
+
+            <div class="cardBotoes">
+              <a
+                class="popup-youtube botao"
+                href="https://www.youtube.com/watch?v=gOE2BVRCUkM"
+              >
+                TRAILER<i class="fa fa-play-circle" aria-hidden="true"></i>
+              </a>
+              <a
+                class="botao"
+                href="https://store.steampowered.com/app/1593500/God_of_War/"
+                target="_blank"
+              >
+                COMPRAR<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a class="portfolio" href="https://brunoalaraujo.github.io/portfolio/" target="_blank">Portfólio</a>
+    </footer>
+    <!-- Font Awesome js -->
     <script src="https://kit.fontawesome.com/8441c574d9.js"></script>
+    <!-- Owl Carousel js -->
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="js/magnific/jquery.magnific-popup.min.js"></script>
+    <!-- My js -->
     <script src="js/setup.js"></script>
   </body>
 </html>
